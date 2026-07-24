@@ -2,12 +2,14 @@
 
 <p align="center">
   <b>Estudiante de Ingeniería Multimedia (UNAD)</b> · Especialización en <b>Gemelos Digitales</b><br/>
-  Simulación en tiempo real · IoT/MQTT · Visualización 3D en Unity · Automatización con Python
+  Simulación en tiempo real · IoT/MQTT · Visualización 3D · Enfoque solarpunk
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black" alt="React"/>
+  <img src="https://img.shields.io/badge/Three.js-000000?logo=three.js&logoColor=white" alt="Three.js"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript"/>
   <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/C%23-239120?logo=csharp&logoColor=white" alt="C#"/>
   <img src="https://img.shields.io/badge/Unity-000000?logo=unity&logoColor=white" alt="Unity"/>
   <img src="https://img.shields.io/badge/MQTT-660066?logo=mqtt&logoColor=white" alt="MQTT"/>
   <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" alt="Git"/>
@@ -17,7 +19,7 @@
 
 ## Sobre mí
 
-Construyo **gemelos digitales**: réplicas virtuales de sistemas físicos que reciben datos de sensores en tiempo real (vía MQTT) y los visualizan en 3D con Unity, disparando alertas automáticas. Me enfoco en casos de uso con impacto en el **contexto colombiano** (agua, energía, infraestructura vial, medio ambiente e industria), bajo una visión *solarpunk* de tecnología al servicio de la sostenibilidad.
+Construyo **gemelos digitales**: réplicas virtuales de sistemas físicos que se simulan en tiempo real, pueden recibir datos de sensores reales (vía MQTT) y se visualizan en 3D, disparando alertas automáticas. Me enfoco en casos de uso con impacto en el **contexto colombiano** (agua, energía, infraestructura, medio ambiente e industria), bajo una visión *solarpunk* de tecnología al servicio de la sostenibilidad. Trabajo con honestidad técnica verificable: sin números inventados, cada gemelo declara qué tan real es y de dónde salen sus datos.
 
 ## Por qué Solarpunk
 
@@ -25,29 +27,31 @@ El Solarpunk es la filosofía que da base a todos mis gemelos digitales: tecnolo
 
 **[Leer el informe completo sobre Solarpunk](informe-solarpunk.md)**
 
-## Portafolio de Gemelos Digitales
+## Portafolio en vivo
 
-| Proyecto | Descripción | Stack | Repo |
-|---|---|---|---|
-| **Sol-Terraza DT** | Hidroponía urbana con captura de neblina: temperatura, pH, CE y nivel de depósito. | Python · MQTT · Unity | [sol-terraza-dt](https://github.com/camelojd/sol-terraza-dt) |
-| **Aqua-Serve DT** | Captación pluvial más enfriamiento líquido (DLC) para data centers de IA. | Python · MQTT · Unity | [aqua-serve-dt](https://github.com/camelojd/aqua-serve-dt) |
-| **Fibra-Vía DT** | Pavimento inteligente con generación piezoeléctrica y mantenimiento predictivo vial. | Python · MQTT · Unity | [fibra-via-dt](https://github.com/camelojd/fibra-via-dt) |
-| **Bio-Canal DT** | Fitodepuración de ríos urbanos más biodigestor comunitario de biogás. | Python · MQTT · Unity | [bio-canal-dt](https://github.com/camelojd/bio-canal-dt) |
-| **Refugio-Vivo DT** | Salud predictiva en un santuario de animales rescatados: detección temprana de enfermedad. | Python · MQTT · Unity | [refugio-vivo-dt](https://github.com/camelojd/refugio-vivo-dt) |
-| **Obra-Viva DT** | Vigilancia integral de obra: vibración, ruido, aire, nivel freático y estrés térmico. | Python · MQTT · Unity | [obra-viva-dt](https://github.com/camelojd/obra-viva-dt) |
-| **Ciclo-Obra DT** | Trazabilidad de materiales de construcción con RFID y cadena de custodia. | Python · MQTT · Unity | [ciclo-obra-dt](https://github.com/camelojd/ciclo-obra-dt) |
-| **Solar-Edificio DT** | Balance energético solar de un edificio: generación FV, consumo y batería. | Python · MQTT · Unity | [solar-edificio-dt](https://github.com/camelojd/solar-edificio-dt) |
-| **Fermenta-Viva DT** | Fermentación de precisión: proteína láctea sin la vaca, con máquina de estados ISA-88. | Python · MQTT · Unity | [fermenta-viva-dt](https://github.com/camelojd/fermenta-viva-dt) |
-| **Abasto-Vivo DT** | Flota de 5 robots AMR en un banco de alimentos, con priorización FEFO por caducidad. | Python · MQTT · Unity | [abasto-vivo-dt](https://github.com/camelojd/abasto-vivo-dt) |
-| **Canal-Alerta DT** | Cuenca de drenaje urbano bogotana con alerta temprana de inundación de 4 niveles. | Python · MQTT · Unity | [canal-alerta-dt](https://github.com/camelojd/canal-alerta-dt) |
+Mi trabajo principal es **portafolio-solarpunk**: 8 gemelos digitales corriendo en vivo en el navegador, cada uno con su simulador, su escena 3D y su panel de datos. Cada gemelo lleva una **etiqueta de fidelidad** y una hoja de supuestos, así cualquiera sabe de un vistazo qué es modelo y qué es dato real.
 
-> Cada repositorio incluye el simulador Python (MQTT más JSON), el script de visualización C# para Unity y un caso de estudio.
+**En vivo:** [portafolio-solarpunk.vercel.app](https://portafolio-solarpunk.vercel.app)
+**Código:** [github.com/camelojd/portafolio-solarpunk](https://github.com/camelojd/portafolio-solarpunk)
 
-## Stack principal
+| Gemelo | Qué es | Fidelidad |
+|---|---|:---:|
+| **Sol-Terraza** | Hidroponía urbana en terraza; ingesta de sensores reales por MQTT (nodo ESP32). | B |
+| **Aqua-Serve** | Datacenter de IA enfriado por líquido; balance hídrico de captación pluvial. | B |
+| **Refugio-Vivo** | Refugios para animales rescatados; confort térmico según el material del techo. | B |
+| **Fermenta-Viva** | Fermentación de precisión (proteína sin la vaca) con máquina de estados ISA-88. | B |
+| **Abasto-Vivo** | Flota de robots AMR en un banco de alimentos, con priorización FEFO por caducidad. | C |
+| **Obra-Viva** | Monitoreo de obra (vibración, ruido, polvo, talud, calor) con umbrales de norma. | B |
+| **Solar-Edificio** | Balance fotovoltaico de un edificio; validado contra datos reales de PVGIS. | B |
+| **Canal-Alerta** | Drenaje urbano y alerta temprana; alimentado con lluvia real de IDEAM. | B |
 
-- **Lenguajes:** Python, C#
-- **Motor 3D / visualización:** Unity (M2MqttUnity)
-- **IoT / mensajería:** MQTT (paho-mqtt, broker EMQX), JSON
+> Fidelidad: **A** física publicada y validada · **B** empírico calibrado o física simplificada defendible · **C** heurística ilustrativa. El detalle y las fuentes de cada gemelo están en `docs/fidelidad.md` del repositorio.
+
+## Stack
+
+- **Portafolio en vivo (lo que corre hoy):** React 19 · Vite · Three.js · JavaScript
+- **IoT en vivo:** MQTT sobre WebSocket (mqtt.js) con un nodo ESP32 real (SHT30 + BH1750)
+- **Diseño de producción objetivo, por gemelo:** Python · Unity (M2MqttUnity) · MQTT
 - **Herramientas:** Git, GitHub, Visual Studio Code
 
 ## Contacto
