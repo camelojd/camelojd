@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>Estudiante de Ingeniería Multimedia (UNAD)</b> · Especialización en <b>Gemelos Digitales</b><br/>
-  Simulación en tiempo real · IoT/MQTT · Visualización 3D · Enfoque solarpunk
+  Simulación en tiempo real · Visualización 3D · Enfoque solarpunk
 </p>
 
 <p align="center">
@@ -11,7 +11,6 @@
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript"/>
   <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/Unity-000000?logo=unity&logoColor=white" alt="Unity"/>
-  <img src="https://img.shields.io/badge/MQTT-660066?logo=mqtt&logoColor=white" alt="MQTT"/>
   <img src="https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white" alt="Git"/>
 </p>
 
@@ -19,7 +18,7 @@
 
 ## Sobre mí
 
-Construyo **gemelos digitales**: réplicas virtuales de sistemas físicos que se simulan en tiempo real, pueden recibir datos de sensores reales (vía MQTT) y se visualizan en 3D, disparando alertas automáticas. Me enfoco en casos de uso con impacto en el **contexto colombiano** (agua, energía, infraestructura, medio ambiente e industria), bajo una visión *solarpunk* de tecnología al servicio de la sostenibilidad. Trabajo con honestidad técnica verificable: sin números inventados, cada gemelo declara qué tan real es y de dónde salen sus datos.
+Construyo **gemelos digitales**: réplicas virtuales de sistemas físicos que se simulan en tiempo real y se visualizan en 3D, disparando alertas automáticas. Me enfoco en casos de uso con impacto en el **contexto colombiano** (agua, energía, infraestructura, medio ambiente e industria), bajo una visión *solarpunk* de tecnología al servicio de la sostenibilidad. Trabajo con honestidad técnica verificable: sin números inventados, cada gemelo declara qué tan real es y de dónde salen sus datos.
 
 ## Por qué Solarpunk
 
@@ -36,22 +35,20 @@ Mi trabajo principal es **portafolio-solarpunk**: 8 gemelos digitales corriendo 
 
 | Gemelo | Qué es | Fidelidad |
 |---|---|:---:|
-| **Sol-Terraza** | Hidroponía urbana en terraza; ingesta de sensores reales por MQTT (nodo ESP32). | B |
+| **Sol-Terraza** | Hidroponía urbana en terraza: temperatura, pH, conductividad, nivel y batería. | B |
 | **Aqua-Serve** | Datacenter de IA enfriado por líquido; balance hídrico de captación pluvial. | B |
 | **Refugio-Vivo** | Refugios para animales rescatados; confort térmico según el material del techo. | B |
 | **Fermenta-Viva** | Fermentación de precisión (proteína sin la vaca) con máquina de estados ISA-88. | B |
 | **Abasto-Vivo** | Flota de robots AMR en un banco de alimentos, con priorización FEFO por caducidad. | C |
 | **Obra-Viva** | Monitoreo de obra (vibración, ruido, polvo, talud, calor) con umbrales de norma. | B |
-| **Solar-Edificio** | Balance fotovoltaico de un edificio; validado contra datos reales de PVGIS. | B |
+| **Solar-Edificio** | Balance fotovoltaico de un edificio; puede usar irradiancia real de Bogotá (PVGIS). | B |
 | **Canal-Alerta** | Drenaje urbano y alerta temprana; alimentado con lluvia real de IDEAM. | B |
 
 > Fidelidad: **A** física publicada y validada · **B** empírico calibrado o física simplificada defendible · **C** heurística ilustrativa. El detalle y las fuentes de cada gemelo están en `docs/fidelidad.md` del repositorio.
 
 ## Stack
 
-- **Portafolio en vivo (lo que corre hoy):** React 19 · Vite · Three.js · JavaScript
-- **IoT en vivo:** MQTT sobre WebSocket (mqtt.js) con un nodo ESP32 real (SHT30 + BH1750)
-- **Diseño de producción objetivo, por gemelo:** Python · Unity (M2MqttUnity) · MQTT
+- **Portafolio en vivo:** React 19 · Vite · Three.js · JavaScript
 - **Herramientas:** Git, GitHub, Visual Studio Code
 
 ## Contacto
